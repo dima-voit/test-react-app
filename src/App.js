@@ -1,14 +1,16 @@
 import React from 'react';
 
-import { Navbar } from './components';
-import { Aside, Footer, Header } from './containers';
+import { Aside, Content, Footer, Header } from './components';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Aside />
-      <Footer />
+      <div className="wrapper">
+        <Header />
+        <Aside />
+        <Content />
+        <Footer />
+      </div>
     </div>
   );
 }
