@@ -25,6 +25,7 @@ ul, ol {
 }
 
 a {
+  color: var(--color-light);
   text-decoration: none;
 }
 
@@ -47,5 +48,4 @@ img {
     "footer footer";
   grid-template-rows: 90px 1fr 90px;
   grid-template-columns: 3fr 9fr;
-  background: var(--color-secondary);
 }

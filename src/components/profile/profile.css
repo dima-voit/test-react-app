@@ -1,4 +1,4 @@
-.footer {
-  grid-area: footer;
+.profile {
+  grid-area: content;
   background: var(--color-secondary);
 }

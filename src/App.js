@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Aside, Content, Footer, Header } from './components';
+import { Aside, Footer, Header, Profile } from './components';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <div className="wrapper">
         <Header />
         <Aside />
-        <Content />
+        <Profile />
         <Footer />
       </div>
     </div>
