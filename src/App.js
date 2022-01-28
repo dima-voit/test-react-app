@@ -1,15 +1,17 @@
 import React from 'react';
-
+import { BrowserRouter } from 'react-router-dom';
 import { Aside, Footer, Header, Profile } from './components';
 
 function App() {
   return (
     <div className="App">
       <div className="wrapper">
-        <Header />
-        <Aside />
-        <Profile />
-        <Footer />
+        <BrowserRouter>
+          <Header />
+          <Aside />
+          <Profile />
+          <Footer />
+        </BrowserRouter>
       </div>
     </div>
   );
