@@ -7,7 +7,7 @@ const education = [
     title: "Higher education",
     name: "Donbas National Academy of Civil Engineering and Architecture",
     faculty: "Faculty of Industrial and Civil Engineering",
-    date: "2006 - 2011",
+    date: "",
   },
   {
     title: "Courses",

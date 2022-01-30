@@ -18,11 +18,10 @@ const Footer = () => {
   };
   return (
     <div className="footer">
-      <h4>Random Image</h4>
-      {image && <img src={image} alt='Image' />}
-      <button type='button' onClick={handleChange}>
-        Change Image
+      <button className='btn' type='button' onClick={handleChange}>
+        Click
       </button>
+      {image && <img src={image} alt='Image' />}
     </div>
   )
 }

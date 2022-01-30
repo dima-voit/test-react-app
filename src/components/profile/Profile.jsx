@@ -11,10 +11,10 @@ const Profile = () => {
   return (
     <div className="profile">
       <Routes>
-          <Route path="/about" element= {<About/>}/>
-          <Route path="/education" element={<Education/>}/>
-          <Route path="/contacts" element={<Contacts/>}/>
-        </Routes>
+        <Route path="/about" element= {<About/>}/>
+        <Route path="/education" element={<Education/>}/>
+        <Route path="/contacts" element={<Contacts/>}/>
+      </Routes>
     </div>
   )
 }

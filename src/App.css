@@ -1,37 +1,28 @@
-body {
-  margin: 0;
-  font-family: var(--font-family);
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--color-light);
-  background: var(--color-primary);
+.App {
+  color: var(--color-text);
+  background: var(--background-color);
+  transition: background-color .2s linear;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.btn {
+  padding: 2px 15px;
+  color: var(--button-text-color);
+  background: var(--button-background-color);
+  border-color: var(--button-border-color);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
+.btn:hover {
+  box-shadow: 1px 1px 10px yellow;
 }
 
-ul, ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: var(--color-light);
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  display: block;
+.sidebar,
+.footer,
+.header,
+.profile {
+  padding: 15px;
+  background-color: var(--section-background-color);
 }
 
 .wrapper {
@@ -46,6 +37,6 @@ img {
     "header header"
     "sidebar content"
     "footer footer";
-  grid-template-rows: 90px 1fr 90px;
+  grid-template-rows: 90px 1fr 120px;
   grid-template-columns: 3fr 9fr;
 }
