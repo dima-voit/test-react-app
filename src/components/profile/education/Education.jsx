@@ -16,7 +16,7 @@ const education = [
     date: "",
   },
   {
-    title: "Courses",
+    title: "",
     name: "Prometheus",
     faculty: "Fundamentals of WEB UI development",
     date: "",

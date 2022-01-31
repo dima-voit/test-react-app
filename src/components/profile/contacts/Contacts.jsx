@@ -1,32 +1,35 @@
 import React from "react";
+import ContactItem from "./ContactItem";
 
 import './contacts.css';
 
-const contactsInfo = {
-  place: 'Ukraine, Kyiv',
-  mail: 'dmytro.vojt@gmail.com',
-  phone: '+380 (63) 049-33-04',
-  github: 'dima-voit',
-  linkedin: 'dmytro-voit',
-}
-
 const Contacts = () => {
+
+  let contactsData = [
+    {
+      country: 'Ukraine',
+      city: 'Kyiv',
+      mail: 'dmytro.vojt@gmail.com',
+      githubLink: 'https://github.com/dima-voit',
+      githubName: 'dima-voit',
+      linkedinLink: 'https://www.linkedin.com/in/dmytro-voit',
+      linkedinName: 'dmytro-voit',
+    }
+  ]
+
   return (
     <div className="contacts">
-      <ul className="contact__list">
-        <li className="contact__list-item">
-            Ukraine, Kyiv
-        </li>
-        <li class="contact__list-item">
-          <a class="contact__link" href="mailto:dmytro.vojt@gmail.com">E-mail: dmytro.vojt@gmail.com</a>
-        </li>
-        <li className="contact__list-item">
-            <a className="contact__link" href="https://github.com/dima-voit" target="_blank">GitHub: dima-voit</a>
-        </li>
-        <li className="contact__list-item">
-            <a className="contact__link" href="https://www.linkedin.com/in/dmytro-voit" target="_blank">Linkedin: dmytro-voit</a>
-        </li>
-      </ul>
+      {contactsData.map((contact) => (
+        <ContactItem 
+        country={contact.country} 
+        city={contact.city} 
+        mail={contact.mail}
+        githubLink={contact.githubLink}
+        githubName={contact.githubName}
+        linkedinLink={contact.linkedinLink}
+        linkedinName={contact.linkedinName} 
+      />
+      ))}
     </div>
   )
 }

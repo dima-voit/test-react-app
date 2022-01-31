@@ -6,3 +6,13 @@
   margin-bottom: 10px;
   font-weight: bold;
 }
+
+.nav__item a.active {
+  color: #3A80F9;
+}
+
+@media (max-width: 768px) { 
+  .sidebar {
+    display: none;
+  }
+}

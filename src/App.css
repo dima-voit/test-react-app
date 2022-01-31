@@ -14,7 +14,7 @@
 }
 
 .btn:hover {
-  box-shadow: 1px 1px 10px yellow;
+  box-shadow: 1px 1px 10px #3A80F9;
 }
 
 .sidebar,
@@ -39,4 +39,14 @@
     "footer footer";
   grid-template-rows: 90px 1fr 120px;
   grid-template-columns: 3fr 9fr;
+}
+
+@media (max-width: 768px) { 
+  .wrapper {
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+    grid-template-columns: 12fr;
+  }
 }
