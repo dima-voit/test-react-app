@@ -3,14 +3,14 @@ import './education.css';
 
 const EducationOrganization = (props) => {
   return (
-      <section className="section">
-        <h2 className="section__title">{ props.title }</h2>
+      <div className="education__inner">
+        <h2 className="education__title">{ props.title }</h2>
         <div className="content__wrap">
           <span className="period">{ props.date }</span>
-          <p className="section__text"><b>{ props.name }</b></p>
-          <p className="section__text">{ props.faculty }</p>
+          <p className="education__text"><b>{ props.name }</b></p>
+          <p className="education__text">{ props.faculty }</p>
         </div>
-      </section>
+      </div>
   )
 }
 

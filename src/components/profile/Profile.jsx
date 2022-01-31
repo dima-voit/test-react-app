@@ -11,7 +11,7 @@ const Profile = () => {
   return (
     <div className="profile">
       <Routes>
-        <Route path="/about" element= {<About/>}/>
+        <Route path="/" element= {<About/>} exact={true}/>
         <Route path="/education" element={<Education/>}/>
         <Route path="/contacts" element={<Contacts/>}/>
       </Routes>

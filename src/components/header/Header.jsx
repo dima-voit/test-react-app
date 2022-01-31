@@ -5,18 +5,18 @@ import './header.css';
 
 const Header = () => {
   const { theme, setTheme } = useTheme()
-  const handLight = () => {
+  const btnLight = () => {
     setTheme('light')
   }
-  const handDark = () => {
+  const btnDark = () => {
     setTheme('dark')
   }
   return (
     <header className="header">
       <Navbar />
       <div className="btn__wrap">
-        <button className='btn' onClick={handLight}>Light</button>
-        <button className='btn' onClick={handDark}>Dark</button>
+        <button className='btn' onClick={btnLight}>Light</button>
+        <button className='btn' onClick={btnDark}>Dark</button>
       </div>
     </header>
   )

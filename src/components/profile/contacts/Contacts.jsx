@@ -5,7 +5,7 @@ import './contacts.css';
 
 const Contacts = () => {
 
-  let contactsData = [
+  const contactsData = [
     {
       country: 'Ukraine',
       city: 'Kyiv',
