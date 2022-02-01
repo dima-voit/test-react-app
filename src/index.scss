@@ -2,7 +2,6 @@
 
 :root {
   --font-family: 'Rubik', sans-serif;
-  
 }
 
 html[data-theme='dark'] {
@@ -46,17 +45,43 @@ ul, ol {
 }
 
 a {
-  color: var(--color-light);
+  color: var(--color-text);
   text-decoration: none;
-}
 
-a:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.active {
+    color: #3A80F9;
+  }
 }
 
 img {
   max-width: 100%;
   display: block;
   border-radius: 10px;
+}
+
+.sidebar,
+.footer,
+.header,
+.profile {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--section-background-color);
+}
+
+.btn {
+  padding: 2px 15px;
+  color: var(--button-text-color);
+  background: var(--button-background-color);
+  border-color: var(--button-border-color);
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 1px 1px 10px #3A80F9;
+  }
 }
 

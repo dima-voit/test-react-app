@@ -1,21 +1,24 @@
 import React from "react";
 import EducationOrganization from "./EducationOrganization";
-import './education.css';
+import styles from './education.module.scss';
 
 const education = [
   {
+    id: 1,
     title: "Higher education",
     name: "Donbas National Academy of Civil Engineering and Architecture",
     faculty: "Faculty of Industrial and Civil Engineering",
     date: "",
   },
   {
+    id: 2,
     title: "Courses",
     name: "IT Hillel",
     faculty: "Front-End Basic, Front-End Pro",
     date: "",
   },
   {
+    id: 3,
     title: "",
     name: "Prometheus",
     faculty: "Fundamentals of WEB UI development",
@@ -25,9 +28,14 @@ const education = [
 
 const Education = () => {
   return (
-    <div className="education">
-      {education.map((obj) => (
-        <EducationOrganization title={obj.title} name={obj.name} faculty={obj.faculty} date={obj.date} />
+    <div className={styles.education}>
+      {education.map((education) => (
+        <EducationOrganization 
+          key={education.id}
+          title={education.title} 
+          name={education.name} 
+          faculty={education.faculty} 
+          date={education.date} />
       ))}
     </div>
   )

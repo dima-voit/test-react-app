@@ -4,28 +4,6 @@
   transition: background-color .2s linear;
 }
 
-.btn {
-  padding: 2px 15px;
-  color: var(--button-text-color);
-  background: var(--button-background-color);
-  border-color: var(--button-border-color);
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  box-shadow: 1px 1px 10px #3A80F9;
-}
-
-.sidebar,
-.footer,
-.header,
-.profile {
-  padding: 15px;
-  border-radius: 10px;
-  background-color: var(--section-background-color);
-}
-
 .wrapper {
   width: 100%;
   max-width: 1024px;
@@ -40,10 +18,8 @@
     "footer footer";
   grid-template-rows: 90px 1fr 120px;
   grid-template-columns: 3fr 9fr;
-}
 
-@media (max-width: 768px) { 
-  .wrapper {
+  @media (max-width: 768px) { 
     grid-template-areas:
     "header"
     "content"

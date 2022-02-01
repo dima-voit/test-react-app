@@ -1,0 +1,19 @@
+@import '../../index';
+
+.sidebar {
+  grid-area: sidebar;
+
+  @media (max-width: 768px) { 
+    display: none;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__item {
+    font-weight: bold;
+  }
+}

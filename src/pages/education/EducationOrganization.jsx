@@ -1,14 +1,14 @@
 import React from "react";
-import './education.css';
+import styles from './education.module.scss';
 
 const EducationOrganization = (props) => {
   return (
-      <div className="education__inner">
-        <h2 className="education__title">{ props.title }</h2>
-        <div className="content__wrap">
-          <span className="period">{ props.date }</span>
-          <p className="education__text"><b>{ props.name }</b></p>
-          <p className="education__text">{ props.faculty }</p>
+      <div className={styles.education__inner}>
+        <h2 className={styles.education__title}>{ props.title }</h2>
+        <div className={styles.content__wrap}>
+          <span className={styles.period}>{ props.date }</span>
+          <p className={styles.education__text}><b>{ props.name }</b></p>
+          <p className={styles.education__text}>{ props.faculty }</p>
         </div>
       </div>
   )

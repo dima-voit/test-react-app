@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './footer.css';
+import styles from './footer.module.scss';
 
 const Footer = () => {
   const [image, setImage] = useState('');
@@ -17,8 +17,8 @@ const Footer = () => {
       });
   };
   return (
-    <div className="footer">
-      <button className='btn' type='button' onClick={handleChange}>
+    <div className={styles.footer}>
+      <button className={styles.btn} type='button' onClick={handleChange}>
         Click
       </button>
       {image && <img src={image} alt='Image' />}

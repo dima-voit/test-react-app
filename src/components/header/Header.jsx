@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from '../aside/Navbar';
 import { useTheme } from '../../hooks/use-theme';
-import './header.css';
+import styles from './header.module.scss';
 
 const Header = () => {
-  const { theme, setTheme } = useTheme()
+  const { setTheme } = useTheme();
   const btnLight = () => {
     setTheme('light')
   }
@@ -12,11 +12,11 @@ const Header = () => {
     setTheme('dark')
   }
   return (
-    <header className="header">
+    <header className={styles.header}>
       <Navbar />
-      <div className="btn__wrap">
-        <button className='btn' onClick={btnLight}>Light</button>
-        <button className='btn' onClick={btnDark}>Dark</button>
+      <div className={styles.btn__wrap}>
+        <button className={styles.btn} onClick={btnLight}>Light</button>
+        <button className={styles.btn} onClick={btnDark}>Dark</button>
       </div>
     </header>
   )

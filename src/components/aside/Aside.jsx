@@ -1,11 +1,11 @@
 import React from 'react';
 import Navbar from './Navbar';
 
-import './aside.css';
+import styles from './aside.module.scss';
 
 const Aside = () => {
   return (
-      <aside className="sidebar">
+      <aside className={styles.sidebar}>
         <Navbar />
       </aside>
     
