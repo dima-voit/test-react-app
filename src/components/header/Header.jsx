@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../aside/Navbar';
+import Navbar from '../Aside/Navbar';
 import { useTheme } from '../../hooks/use-theme';
 import styles from './header.module.scss';
 

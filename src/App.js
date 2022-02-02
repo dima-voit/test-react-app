@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Aside, Footer, Header } from './components';
-import Profile from './pages/Profile';
+import Profile from './Router';
 import './App.scss'
 
 function App() {

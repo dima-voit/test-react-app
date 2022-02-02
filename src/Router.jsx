@@ -1,15 +1,15 @@
 import React from 'react';
-import About from './about/About';
-import Contacts from './contacts/Contacts';
-import Education from './education/Education';
+import About from './pages/About/About';
+import Contacts from './pages/Contacts/Contacts';
+import Education from './pages/Education/Education';
 import { Routes, Route } from 'react-router-dom';
-import styles from './profile.module.scss';
+import './index.scss';
 
 
 
 const Profile = () => {
   return (
-    <div className={styles.profile}>
+    <div className="profile">
       <Routes>
         <Route path="/" element= {<About/>} exact={true}/>
         <Route path="/education" element={<Education/>}/>
