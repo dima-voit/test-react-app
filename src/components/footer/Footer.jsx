@@ -2,13 +2,29 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import styles from './footer.module.scss';
 
+const API_URL = 'https://pixabay.com/api/';
+const API_KEY = '25471913-2950087fc607b34181d96d12a';
+
+function randomInteger(min, max) {
+  // случайное число от min до max
+  let rand = min + Math.random() * (max - min);
+  return Math.floor(rand);
+}
+
 const Footer = () => {
   const [image, setImage] = useState('');
   const handleChange = () => {
     axios
-      .get('https://pixabay.com/api/?key=25471913-2950087fc607b34181d96d12a&category=places&image_type=photo')
+      .get(API_URL, {params: {
+        key: API_KEY,
+        category: 'places',
+        image_type: 'photo',
+        order: 'latest'
+      }})
       .then(res => {
-        const uri = res.data.hits[Math.floor(Math.random() * 10)].previewURL;
+        let max = res.data.hits.length -1;
+        let index = randomInteger(0, max);
+        const uri = res.data.hits[index].previewURL;
         uri && setImage(uri);
         // console.log(res.data.hits[0].previewURL);
       })
